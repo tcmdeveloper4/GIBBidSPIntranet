@@ -217,6 +217,103 @@ h1 {
   font-size: 12px;
 }
 
+@media (max-width: 1024px) {
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .welcome-section input {
+        width: 80%;
+    }
+
+    .tagsitem {
+        width: 90%;
+    }
+
+    .quick-links {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .quick-links .card {
+        flex: 1 1 calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .welcome-section input {
+        width: 90%;
+    }
+
+    .tagsitem {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quick-links .card {
+        flex: 1 1 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .documents, .calendar {
+        width: 90%;
+    }
+
+    .document-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .calendar-grid {
+        grid-template-columns: repeat(7, 1fr);
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .navbar ul {
+        gap: 0.5rem;
+    }
+
+    .tagsitem {
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .quick-links {
+        flex-direction: column;
+    }
+
+    .document-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .calendar-grid {
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+
+
     </style>
 </head>
 <body>
@@ -332,6 +429,9 @@ h1 {
       </div>
     </section>
   </div>
+  
+  
+  
     </main>
 </body>
 </html>
