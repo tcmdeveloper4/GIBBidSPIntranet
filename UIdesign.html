@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Intranet</title>
+    <title>BIGG IntranetPage</title>
     <!-- Add Font Awesome CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
@@ -32,7 +32,9 @@
             margin: 0;
 			    width: 31%;
         }
-
+        .logo img{
+            height: 50px;
+        }
         .navbar {
                 width: 100%;
         }
@@ -54,7 +56,8 @@
 		        .welcome-section {
             text-align: center;
             padding: 2rem;
-            background: linear-gradient(217deg, #7CB6C9, #cbddd9);
+            background-image: url("Images/leave.png");
+            /* background: linear-gradient(217deg, #7CB6C9, #cbddd9); */
             background-size: cover; /* Makes the image cover the entire section */
             background-position: center; /* Centers the image */
             background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -98,7 +101,7 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin: 2rem;
+        margin: 1rem 3rem;
 }
 
 .quick-links .card {
@@ -109,6 +112,8 @@
     cursor: pointer;
 	    display: flex;
     flex-direction: column;
+    text-decoration: none;
+    color: black;
 }
    .quick-links .card i {
             font-size: 35px;
@@ -116,7 +121,13 @@
             color: #333;
         }
 		
-		
+		.quickLinks-img {
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
 .container {
   display: flex;
   justify-content: space-around;
@@ -262,13 +273,13 @@ h1 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.card img {
-    width: 100%;
-    height: auto;
+
+.welCome-img {
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 8px;
     margin-bottom: 10px;
 }
-
 .card h3 {
     font-size: 18px;
     margin-bottom: 10px;
@@ -319,10 +330,77 @@ h1 {
     color: #555;
 }
 
+
+
+.whats-new-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    
+}
+
+.whats-new-title {
+    font-size: 32px;
+    color: #1d3a34;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.whats-new-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.whats-new-card {
+    background: linear-gradient(135deg, #7096a3, #a8d6ca);
+    color: #fff;
+    border-radius: 8px;
+    max-width: 300px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-content {
+    margin-top: 15px;
+}
+
+.card-content.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-event-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.card-event-info {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: black;
+}
+
 @media (max-width: 1024px) {
-    .navbar ul {
+    .header, .navbar ul {
         flex-wrap: wrap;
-        justify-content: center;
     }
 
     .welcome-section input {
@@ -335,41 +413,20 @@ h1 {
 
     .quick-links {
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .quick-links .card {
-        flex: 1 1 calc(50% - 2rem);
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-    }
-
-    .welcome-section input {
-        width: 90%;
-    }
-
-    .tagsitem {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .quick-links .card {
-        flex: 1 1 100%;
+        flex: 1 1 calc(50% - 1rem);
     }
 
     .container {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
     }
 
     .documents, .calendar {
-        width: 90%;
+        width: 100%;
+        margin-bottom: 2rem;
     }
 
     .document-grid {
@@ -378,40 +435,39 @@ h1 {
 
     .calendar-grid {
         grid-template-columns: repeat(7, 1fr);
-        font-size: 12px;
     }
-	
-	 .card {
+
+    .whats-new-card {
         max-width: 100%;
     }
-    .cards {
-        flex-direction: column;
-        gap: 15px;
+
+    .containerWelAni {
+        flex-wrap: wrap;
+    }
+
+    .welcomes, .anniversaries {
+        width: 100%;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .header {
         flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
     .logo {
-        width: 100%;
         margin-bottom: 1rem;
     }
 
     .navbar ul {
-        gap: 0.5rem;
-    }
-
-    .tagsitem {
-        gap: 0.5rem;
-        width: 100%;
-    }
-
-    .quick-links {
         flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .quick-links .card {
+        flex: 1 1 100%;
     }
 
     .document-grid {
@@ -421,21 +477,93 @@ h1 {
     .calendar-grid {
         grid-template-columns: repeat(7, 1fr);
     }
-	
-	.section {
-        padding: 15px;
+
+    .cards {
+        flex-direction: column;
     }
-    .card h3 {
-        font-size: 16px;
+
+    .anniversaries ul {
+        padding: 0;
     }
-    .card p {
-        font-size: 12px;
+
+    .anniversary-item {
+        flex-wrap: wrap;
     }
+
     .interaction {
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
 }
+
+@media (max-width: 480px) {
+    .welcome-section {
+        padding: 1.5rem 1rem;
+    }
+
+    .welcome-section input {
+        width: 100%;
+    }
+
+    .tagsitem {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .quick-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .quick-links .card {
+        flex: 1 1 100%;
+    }
+
+    .document-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .calendar-grid {
+        font-size: 10px;
+    }
+
+    .section {
+        padding: 1rem;
+    }
+
+    .interaction span {
+        font-size: 10px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .card img {
+        max-width: 100%;
+    }
+
+    .navbar ul {
+        padding: 0;
+    }
+
+    .whats-new-cards {
+        flex-direction: column;
+    }
+
+    .whats-new-card {
+        max-width: 100%;
+    }
+}
+
 
 
     </style>
@@ -443,7 +571,7 @@ h1 {
 <body>
     <header class="header">
         <div class="logo">
-            <h1>The Hub</h1>
+            <img src="Images\logo.png" alt="No Image">
         </div>
         <div class="navbar">
             <ul>
@@ -461,50 +589,50 @@ h1 {
             <input type="text" placeholder="Search Forms & Templates">
             <div class="tags">
 			<div class="tagsitem">
-                <span>Request Forms</span>
-                <span>Templates</span>
-                <span>Applications</span>
-                <span>Employee Handbook</span>
-                <span>Marketing Collateral</span>
-                <span>Policies & Procedures</span>
-                <span>Projects</span>
-                <span>SOPs</span>
+                <a href="#"><span>Request Forms</span></a>
+                <a href="#"><span>Templates</span></a>
+                <a href="#"><span>Applications</span></a>
+                <a href="#"><span>Employee Handbook</span></a>
+                <a href="#"><span>Marketing Collateral</span></a>
+                <a href="#"><span>Policies & Procedures</span></a>
+                <a href="#"><span>Projects</span></a>
+                <a href="#"><span>SOPs</span></a>
 				</div>
             </div>
         </section>
         <section class="quick-links">
-            <div class="card">
-                <i class="fas fa-clock"></i>
-                <span>Time Sheets</span>
+            <a href="#" class="card">
+                <img src="Images\BidValidation.png" class="quickLinks-img" alt="No Image">
+                <span>Bid Validation</span>
+            </a>
+            <a href="#" class="card">
+                <img src="Images\BidEvaluation.png" class="quickLinks-img" alt="No Image">
+                <span>Bid Evalution</span>
+            </a>
+            <a href="#" class="card">
+                <img src="Images\meetings.png" class="quickLinks-img" alt="No Image">
+                <span>Meetings</span>
+            </a>
+            <a href="#" class="card">
+                <img src="Images\documentController.png" class="quickLinks-img" alt="No Image">
+                <span>Document Control</span>
+            </a>
+            <a href="#" class="card">
+                <img src="Images\planner .png" class="quickLinks-img" alt="No Image">
+                <span>Planner</span>
+            </a>
+            <a href="#" class="card">
+                <img src="Images\cv_bank.png" class="quickLinks-img" alt="No Image">
+                <span>CV Bank</span>
             </div>
-            <div class="card">
-                <i class="fas fa-calendar-alt"></i>
-                <span>Time Off</span>
-            </div>
-            <div class="card">
-                <i class="fas fa-wallet"></i>
-                <span>Expenses</span>
-            </div>
-            <div class="card">
-                <i class="fas fa-umbrella-beach"></i>
-                <span>Holidays</span>
-            </div>
-            <div class="card">
-                <i class="fas fa-heart"></i>
-                <span>Benefits</span>
-            </div>
-            <div class="card">
-                <i class="fas fa-users"></i>
-                <span>Directory</span>
-            </div>
-            <div class="card">
-                <i class="fas fa-headset"></i>
-                <span>IT Helpdesk</span>
-            </div>
-            <div class="card">
-                <i class="fas fa-box"></i>
-                <span>Products</span>
-            </div>
+            <a href="#" class="card">
+                <img src="Images\methodology.png" class="quickLinks-img" alt="No Image">
+                <span>Methodologies</span>
+            </a>
+            <a href="#" class="card">
+                <img src="Images\reporting.png" class="quickLinks-img" alt="No Image">
+                <span>Reporting</span>
+            </a>
         </section>
 		
 		<div class="container">
@@ -558,6 +686,43 @@ h1 {
   
     </main>
 	
+	    <section class="whats-new-section">
+        <h2 class="whats-new-title">What's New?</h2>
+        <div class="whats-new-cards">
+            <!-- Card 1 -->
+            <div class="whats-new-card">
+                <div class="card-image">
+                    <img src="Images\Constructon.png" alt="Event Speaker Jacqueline Thompson">
+                </div>
+                <div class="card-content">
+                    <p class="card-event-title">How to Build And Manage Your Digital Strategy</p>
+                    <p class="card-event-info">Jacqueline Thompson</p>
+                    <p class="card-event-info">March 24, 2024 | 7:30 PM EST</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="whats-new-card">
+			                <div class="card-image">
+                    <img src="Images\Constructon2.png" alt="Lunch and Learn Brunch">
+                </div>
+                  <div class="card-content">
+                    <p class="card-event-title">Lunch & learn brunch</p>
+                    <p class="card-event-info">10 AM, Room #12</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="whats-new-card">
+                <div class="card-image">
+                    <img src="Images\Constructon.png" alt="Lunch and Learn Brunch">
+                </div>
+                <div class="card-content">
+                    <p class="card-event-title">Lunch & learn brunch</p>
+                    <p class="card-event-info">10 AM, Room #12</p>
+                </div>
+            </div>
+        </div>
+    </section>
+	
 	
 	<div class="containerWelAni">
         <div class="section welcomes">
@@ -566,7 +731,7 @@ h1 {
             <div class="cards">
                 <div class="card">                    
                     <p>Kayla is a Contract Management Team Lead. She oversees the contractor management process...</p>
-					<img src="https://via.placeholder.com/150" alt="Kayla Anderson">
+					<img src="Images\ConstructionMan.png" class="welCome-img" alt="Kayla Anderson">
                     <div class="interaction">
                         <span>Comments (0)</span>
                         <span>👍 0</span>
@@ -576,7 +741,7 @@ h1 {
                     
                     
                     <p>Emily is a Governance and Security Manager with over a decade of experience in the field...</p>
-					<img src="https://via.placeholder.com/150" alt="Kayla Anderson">
+					<img src="Images\ConstructionMan.png" class="welCome-img" alt="Kayla Anderson">
                     <div class="interaction">
                         <span>Comments (0)</span>
                         <span>👍 0</span>
@@ -584,7 +749,7 @@ h1 {
                 </div>
                 <div class="card">                    
                     <p>Derek is a Director of Engineering responsible for leading engineering operations...</p>
-					<img src="https://via.placeholder.com/150" alt="Kayla Anderson">
+					<img src="Images\ConstructionMan.png" class="welCome-img" alt="Kayla Anderson">
                     <div class="interaction">
                         <span>Comments (1)</span>
                         <span>👍 0</span>
@@ -596,28 +761,28 @@ h1 {
             <h2>Anniversaries</h2>
             <ul>
                 <li class="anniversary-item">
-                    <img src="https://via.placeholder.com/50" alt="Yaroslav Pentsarskyy">
+                    <img src="Images\ConstructionMan.png" alt="Yaroslav Pentsarskyy">
                     <div class="anniversary-info">
                         <p class="name">Yaroslav Pentsarskyy</p>
                         <span>Work Anniversary on Nov 30</span>
                     </div>
                 </li>
                 <li class="anniversary-item">
-                    <img src="https://via.placeholder.com/50" alt="Sabina Saetgareeva">
+                    <img src="Images\ConstructionMan.png" alt="Sabina Saetgareeva">
                     <div class="anniversary-info">
                         <p class="name">Sabina Saetgareeva</p>
                         <span>Work Anniversary on Nov 30</span>
                     </div>
                 </li>
                 <li class="anniversary-item">
-                    <img src="https://via.placeholder.com/50" alt="Andrew Calston">
+                    <img src="Images\ConstructionMan.png" alt="Andrew Calston">
                     <div class="anniversary-info">
                         <p class="name">Andrew Calston (Admin)</p>
                         <span>Birthday on Nov 30</span>
                     </div>
                 </li>
                 <li class="anniversary-item">
-                    <img src="https://via.placeholder.com/50" alt="Luis Ponce">
+                    <img src="Images\ConstructionMan.png" alt="Luis Ponce">
                     <div class="anniversary-info">
                         <p class="name">Luis Ponce</p>
                         <span>Birthday on Nov 30</span>
