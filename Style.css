@@ -14,7 +14,7 @@ body {
 
 
 .header {
-        background-color: white;
+        background-color: #7abde8;
     color: black;
     display: flex;
     align-items: center;
@@ -109,7 +109,7 @@ margin: 1rem 3rem;
 }
 
 .quick-links .card {
-background: #7cb5c9;
+background: #7abde8;
 padding: 1rem;
 border-radius: 8px;
 text-align: center;
@@ -168,7 +168,7 @@ gap: 15px;
 
 .document-card {
 padding: 15px;
-background: linear-gradient(135deg, #7CB6C9, #1a3d34);
+background: linear-gradient(135deg, #7abde8, #9aa8b1);
 color: #fff;
 text-align: center;
 border-radius: 8px;
@@ -212,7 +212,7 @@ gap: 5px;
 .day {
 padding: 10px;
 border-radius: 4px;
-background: linear-gradient(217deg, #7CB6C9, #cbddd9);
+background: linear-gradient(135deg, #7abde8, #9aa8b1);
 cursor: pointer;
 }
 
@@ -229,7 +229,7 @@ font-size: 14px;
 .event-label {
 display: inline-block;
 padding: 5px 10px;
-background-color: #1a3d34;
+background-color: #7abde8;
 color: #fff;
 border-radius: 4px;
 font-size: 12px;
@@ -275,7 +275,7 @@ flex-wrap: wrap;
 }
 
 .card {
-background: linear-gradient(217deg, #7CB6C9, #cbddd9);
+background-color: #7abde8;
 border-radius: 8px;
 padding: 15px;
 text-align: center;
@@ -298,7 +298,7 @@ margin-bottom: 10px;
 
 .card p {
 font-size: 14px;
-color: #555;
+color: white;
 margin-bottom: 10px;
 }
 
@@ -306,7 +306,7 @@ margin-bottom: 10px;
 display: flex;
 justify-content: space-between;
 font-size: 12px;
-color: #777;
+
 }
 
 .anniversaries ul {
@@ -324,6 +324,7 @@ width: 50px;
 height: 50px;
 border-radius: 50%;
 margin-right: 15px;
+border: 1px solid #7abde8;
 }
 
 .anniversary-info {
@@ -341,11 +342,12 @@ font-size: 12px;
 color: #555;
 }
 /* Welcome&Aniversary Section End*/
+
+
 /* Whats New Section Start*/
 
 .whats-new-section {
-padding: 40px 20px;
-background-color: #fff;
+padding: 0px 20px;
 border-radius: 8px;
 
 }
@@ -365,7 +367,7 @@ flex-wrap: wrap;
 }
 
 .whats-new-card {
-background: linear-gradient(135deg, #7096a3, #a8d6ca);
+background-color: #7abde8;
 color: #fff;
 border-radius: 8px;
 max-width: 300px;
@@ -400,13 +402,13 @@ justify-content: center;
 font-size: 18px;
 font-weight: bold;
 margin-bottom: 10px;
-color: black;
+color: white;
 }
 
 .card-event-info {
 font-size: 14px;
 margin-bottom: 8px;
-color: black;
+color: white;
 }
 
 /* Whats New Section End*/
@@ -415,7 +417,7 @@ color: black;
 .footer{
 
 background-color: black;
-color: white;
+color:#7abde8;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -424,7 +426,7 @@ padding: 1rem;
 
 .footer a{
 
-color: white;
+    color:#7abde8;
 
 }
 /* Footer Section End*/
