@@ -7,29 +7,33 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    background-color:#fafcf9;
     color: #333;
 }
+
 /* Header Section Start*/
 
 
 .header {
-        background-color: #7abde8;
+    background-color: #fafcf9;
     color: black;
     display: flex;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
 }
 
 .logo {
-    margin: 0;
-        width: 31%;
+    /* margin: 0; */
+    width: 31%;
+    margin: 5px 0px 0px 0px;
 }
-.logo img{
+
+.logo img {
     height: 50px;
 }
+
 .navbar {
-        width: 100%;
+    width: 100%;
 }
 
 .navbar ul {
@@ -37,8 +41,8 @@ body {
     display: flex;
     gap: 1rem;
     margin: 0;
-        justify-content: space-between;
-            font-weight: bold;
+    justify-content: space-between;
+    font-weight: bold;
 }
 
 .navbar a {
@@ -50,75 +54,102 @@ body {
 
 /* WelCome Section Start*/
 
-        .welcome-section {
+.welcome-section {
     text-align: center;
     padding: 2rem;
-    background-image: url("Images/Construction.jpg");
-    /* background: linear-gradient(217deg, #7CB6C9, #cbddd9); */
-    background-size: cover; /* Makes the image cover the entire section */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    color: white; /* Ensures text is visible over the image */
+    /* background-image: url("Images/GreenBG.jpg"); */
+    background: #88BB3E;
+    background-size: cover;
+    /* Makes the image cover the entire section */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    color: white;
+    /* Ensures text is visible over the image */
+}
+
+.welcome-section h2 {
+
+    font-size: xxx-large;
 }
 
 .welcome-section input {
     padding: 0.5rem;
     margin-top: 1rem;
-    width: 50%;
-        border-radius: 16px;
+    width: 60%;
+    border-radius: 16px;
 }
-.welcome-section h2{
-color: black;
+
+.welcome-section h2 {
+    color: black;
 
 }
+
+
+
 .tags {
-width: 100%; /* Full width */
-display: flex; /* Enable flexbox */
-justify-content: center; /* Center child horizontally */
-align-items: center; /* Center child vertically if needed */
-padding: 20px; /* Optional: add padding */
-box-sizing: border-box; /* Include padding in the width */
+    width: 100%;
+    /* Full width */
+    display: flex;
+    /* Enable flexbox */
+    justify-content: center;
+    /* Center child horizontally */
+    align-items: center;
+    /* Center child vertically if needed */
+    padding: 20px;
+    /* Optional: add padding */
+    box-sizing: border-box;
+    /* Include padding in the width */
 }
 
 .tagsitem {
-display: flex; /* Flexbox for content inside */
-gap: 10px; /* Add spacing between span elements */
-flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
-text-align: center; /* Center align the text inside spans */
+    display: flex;
+    /* Flexbox for content inside */
+    gap: 10px;
+    /* Add spacing between span elements */
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line if necessary */
+    text-align: center;
+    /* Center align the text inside spans */
 
-justify-content: center;
-width: 52%;
+    justify-content: center;
+    width: 59%;
 }
+
 .tags span {
-    background: rgba(0, 0, 0, 0.72); /* Semi-transparent background for tags */
+    background: rgba(0, 0, 0, 0.72);
+    /* Semi-transparent background for tags */
     color: white;
     padding: 0.5rem;
     margin: 0.2rem;
     border-radius: 25px;
     display: inline-block;
 }
+
 /* WelCome Section End*/
 
 
 /* Quicklinks Section Start*/
 .quick-links {
-display: flex;
-justify-content: center;
-gap: 1rem;
-margin: 1rem 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 3rem;
 }
 
 .quick-links .card {
-background: #7abde8;
-padding: 1rem;
-border-radius: 8px;
-text-align: center;
-cursor: pointer;
-display: flex;
-flex-direction: column;
-text-decoration: none;
-color: black;
+    background: #88BB3E;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
 }
+
 .quick-links .card i {
     font-size: 35px;
     margin-bottom: 0.5rem;
@@ -126,316 +157,334 @@ color: black;
 }
 
 .quickLinks-img {
-margin-left: auto;
-margin-right: auto;
-height: 50px;
-border-radius: 8px;
-margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
+
 /* Quicklinks Section End*/
 
 /* Document&Calender Section Start*/
 .container {
-display: flex;
-justify-content: space-around;
-padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 .documents {
-width: 60%;
+    width: 60%;
 }
-.calendar{
-width:30%;
+
+.calendar {
+    width: 30%;
 }
+
 h1 {
-font-size: 24px;
-color: #1a3d34;
+    font-size: 34px;
+    color: #1a3d34;
 }
 
 .search-bar {
-width: 100%;
-padding: 10px;
-margin-bottom: 20px;
-border: 1px solid #ccc;
-border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 21px;
 }
 
 .document-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
 
 .document-card {
-padding: 15px;
-background: linear-gradient(135deg, #7abde8, #9aa8b1);
-color: #fff;
-text-align: center;
-border-radius: 8px;
-font-size: 14px;
-cursor: pointer;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    background: #88BB3E;
+    color: #fff;
+    /* text-align: center; */
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .document-card:hover {
-opacity: 0.9;
+    opacity: 0.9;
 }
 
 .calendar-container {
-background-color: #fff;
-padding: 15px;
-border-radius: 8px;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .calendar-header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .calendar-header button {
-background: none;
-border: none;
-font-size: 18px;
-cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 .calendar-grid {
-display: grid;
-grid-template-columns: repeat(7, 1fr);
-text-align: center;
-gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    gap: 5px;
 }
 
 .day {
-padding: 10px;
-border-radius: 4px;
-background: linear-gradient(135deg, #7abde8, #9aa8b1);
-cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    background:#E3FBC3;
+    cursor: pointer;
 }
 
-.day:hover, .day.selected {
-background-color: #1a3d34;
-color: #fff;
+.day:hover,
+.day.selected {
+    background-color: #1a3d34;
+    color: #fff;
 }
 
 .event-details {
-margin-top: 15px;
-font-size: 14px;
+    margin-top: 15px;
+    font-size: 14px;
 }
 
 .event-label {
-display: inline-block;
-padding: 5px 10px;
-background-color: #7abde8;
-color: #fff;
-border-radius: 4px;
-font-size: 12px;
+    display: inline-block;
+    padding: 5px 10px;
+    background: #88BB3E;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
 }
+
 /* Document&Calender Section End*/
 
 
 /* Welcome&Aniversary Section Start*/
 .containerWelAni {
-display: flex;
-flex-wrap: wrap;
-gap: 20px;
-margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 35px;
+    justify-content: center;
 }
 
 .section {
-background-color: #fff;
-border-radius: 10px;
-padding: 20px;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); */
 }
 
 .welcomes {
-flex: 0 0 66%;
+    flex: 0 0 66%;
 }
 
 .anniversaries {
-flex: 0 0 30%;
+    flex: 0 0 30%;
 }
 
 .welcomes input {
-width: 100%;
-padding: 10px;
-margin-bottom: 20px;
-border: 1px solid #ccc;
-border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .cards {
-display: flex;
-gap: 20px;
-flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .card {
-background-color: #7abde8;
-border-radius: 8px;
-padding: 15px;
-text-align: center;
-flex: 1;
-max-width: 30%;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* background-color: #90C267; */
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+    max-width: 30%;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1)
 }
 
 
 .welCome-img {
-margin-left: auto;
-margin-right: auto;
-border-radius: 8px;
-margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
+
 .card h3 {
-font-size: 18px;
-margin-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .card p {
-font-size: 14px;
-color: white;
-margin-bottom: 10px;
+    font-size: 14px;
+    color:black;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 .interaction {
-display: flex;
-justify-content: space-between;
-font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
 
 }
 
 .anniversaries ul {
-list-style: none;
+    list-style: none;
 }
 
 .anniversary-item {
-display: flex;
-align-items: center;
-margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 .anniversary-item img {
-width: 50px;
-height: 50px;
-border-radius: 50%;
-margin-right: 15px;
-border: 1px solid #7abde8;
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    margin-right: 15px;
+    border: 1px solid #7abde8;
 }
 
 .anniversary-info {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .anniversary-info .name {
-font-weight: bold;
-font-size: 14px;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .anniversary-info span {
-font-size: 12px;
-color: #555;
+    font-size: 12px;
+    color: #555;
 }
+
 /* Welcome&Aniversary Section End*/
 
 
 /* Whats New Section Start*/
 
 .whats-new-section {
-padding: 0px 20px;
-border-radius: 8px;
+    padding: 0px 20px;
+    border-radius: 8px;
 
 }
 
 .whats-new-title {
-font-size: 32px;
-color: #1d3a34;
-text-align: center;
-margin-bottom: 20px;
+    font-size: 40px;
+    color: #1d3a34;
+    /* text-align: center; */
+    margin-bottom: 20px;
+    margin-left: 40px;
 }
 
 .whats-new-cards {
-display: flex;
-justify-content: center;
-gap: 20px;
-flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .whats-new-card {
-background-color: #7abde8;
-color: #fff;
-border-radius: 8px;
-max-width: 300px;
-width: 100%;
-overflow: hidden;
-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-text-align: center;
-padding: 20px;
+    background-color: #90C267;
+    color: #fff;
+    border-radius: 8px;
+    max-width: 455px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
 }
-
+.containerWelAni h2{
+    font-size: 40px;
+}
+.card-image{
+    width: -webkit-fill-available;
+}
 .card-image img {
-width: 100%;
-height: auto;
-border-radius: 8px;
+    width: 100%;
+    height: auto;
+    /* border-radius: 8px; */
 }
 
 .card-content {
-margin-top: 15px;
+    margin-top: 15px;
 }
 
 .card-content.centered {
-display: flex;
-flex-direction: column;
-justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .card-event-title {
-font-size: 18px;
-font-weight: bold;
-margin-bottom: 10px;
-color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
 }
 
 .card-event-info {
-font-size: 14px;
-margin-bottom: 8px;
-color: white;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: white;
 }
 
 /* Whats New Section End*/
 
 /* Footer Section Start*/
-.footer{
+.footer {
 
-background-color: black;
-color:#7abde8;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 1rem;
+    background-color: black;
+    color: #7abde8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 
-.footer a{
+.footer a {
 
-    color:#7abde8;
+    color: #7abde8;
 
 }
+
 /* Footer Section End*/
 
 
 /* Media query for responsive design*/
 
 @media (max-width: 1024px) {
-    .header, .navbar ul {
+
+    .header,
+    .navbar ul {
         flex-wrap: wrap;
     }
 
@@ -460,7 +509,8 @@ padding: 1rem;
         flex-wrap: wrap;
     }
 
-    .documents, .calendar {
+    .documents,
+    .calendar {
         width: 100%;
         margin-bottom: 2rem;
     }
@@ -477,7 +527,8 @@ padding: 1rem;
         flex-wrap: wrap;
     }
 
-    .welcomes, .anniversaries {
+    .welcomes,
+    .anniversaries {
         width: 100%;
     }
 
@@ -507,6 +558,14 @@ padding: 1rem;
 }
 
 @media (max-width: 768px) {
+    .welcome-section h2 {
+        color: black;
+        font-size: x-large;
+    }
+    .whats-new-title {
+        font-size: x-large;
+        text-align: center;
+    }
     .header {
         flex-direction: column;
         align-items: center;
@@ -538,7 +597,14 @@ padding: 1rem;
         flex-direction: column;
         gap: 10px;
     }
-
+    .containerWelAni h2 {
+        font-size: x-large;
+    }
+    .containerWelAni {
+        flex-direction: column;
+            margin: 0px;
+            /* justify-content: center; */
+    }
     .anniversaries ul {
         padding: 0;
     }
@@ -561,6 +627,19 @@ padding: 1rem;
 }
 
 @media (max-width: 480px) {
+
+    .welcome-section h2 {
+        color: black;
+        font-size: x-large;
+    }
+    .whats-new-title {
+        font-size: x-large;
+        text-align: center;
+    }
+
+
+
+
     .welcome-section {
         padding: 1.5rem 1rem;
     }
@@ -610,7 +689,6 @@ padding: 1rem;
     .navbar ul {
         padding: 0;
     }
-
     .whats-new-cards {
         flex-direction: column;
     }
@@ -632,12 +710,21 @@ padding: 1rem;
     .anniversary-item {
         flex-wrap: wrap;
     }
-
+    .containerWelAni h2 {
+        font-size: x-large;
+    }
     .containerWelAni {
         flex-direction: column;
+        display: flex
+        ;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 0px;
+            /* justify-content: center; */
     }
 
-    .welcomes, .anniversaries {
+    .welcomes,
+    .anniversaries {
         width: 100%;
     }
 }
